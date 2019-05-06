@@ -1,0 +1,4 @@
+path: /markdown/markdown
+title: bibliothèque 'PHP Markdown Lib'
+submodules:
+  - /markdown/markdown/PHPMarkdownLib1.8.0

@@ -1,7 +1,10 @@
 <?php
-// viewer Markdown
-
-require_once __DIR__."/../yamldoc/markdown/PHPMarkdownLib1.8.0/Michelf/MarkdownExtra.inc.php";
+/*PhpDoc:
+name: index.php
+title: viewer Markdown
+includes: [markdown/PHPMarkdownLib1.8.0/Michelf/MarkdownExtra.inc.php]
+*/
+require_once __DIR__."/markdown/PHPMarkdownLib1.8.0/Michelf/MarkdownExtra.inc.php";
 
 use Michelf\MarkdownExtra;
 
@@ -22,7 +25,7 @@ function showdir(string $dirpath='') {
 
 if (!isset($_GET['file'])) {
   echo "<!DOCTYPE HTML><html><head><meta charset='UTF-8'><title>markdown</title></head><body>\n";
-  echo "Permet d'afficher un fichier Markdown<br>\n";
+  echo "Visualiseur Markdown - Choisir un fichier .md<br>\n";
   showdir();
   die();
 }
